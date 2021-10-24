@@ -1,0 +1,23 @@
+--cpu Cortex-M3
+"testsboxingtu\startup_stm32f103xb.o"
+"testsboxingtu\main.o"
+"testsboxingtu\stm32f1xx_it.o"
+"testsboxingtu\stm32f1xx_hal_msp.o"
+"testsboxingtu\stm32f1xx_hal_gpio_ex.o"
+"testsboxingtu\stm32f1xx_hal_tim.o"
+"testsboxingtu\stm32f1xx_hal_tim_ex.o"
+"testsboxingtu\stm32f1xx_hal.o"
+"testsboxingtu\stm32f1xx_hal_rcc.o"
+"testsboxingtu\stm32f1xx_hal_rcc_ex.o"
+"testsboxingtu\stm32f1xx_hal_gpio.o"
+"testsboxingtu\stm32f1xx_hal_dma.o"
+"testsboxingtu\stm32f1xx_hal_cortex.o"
+"testsboxingtu\stm32f1xx_hal_pwr.o"
+"testsboxingtu\stm32f1xx_hal_flash.o"
+"testsboxingtu\stm32f1xx_hal_flash_ex.o"
+"testsboxingtu\stm32f1xx_hal_exti.o"
+"testsboxingtu\system_stm32f1xx.o"
+--library_type=microlib --strict --scatter "testsboxingtu\testsboxingtu.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "testsboxingtu.map" -o testsboxingtu\testsboxingtu.axf
